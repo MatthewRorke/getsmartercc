@@ -1,2 +1,3 @@
 #!/bin/sh -l
-/usr/src/app/bin/codeclimate analyse
+echo $GITHUB_WORKSPACE
+/usr/src/app/bin/codeclimate analyze
