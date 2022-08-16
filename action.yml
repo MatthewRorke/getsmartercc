@@ -5,4 +5,4 @@ runs:
   using: "docker"
   image: "docker://codeclimate/codeclimate"
   args:
-    - help
+    - analyze ${GITHUB_WORKSPACE}
