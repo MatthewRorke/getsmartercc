@@ -6,4 +6,4 @@ runs:
   image: "docker://codeclimate/codeclimate"
   args:
     - analyze
-    - ${GITHUB_WORKSPACE}
+    - ${{ GITHUB_WORKSPACE }}
