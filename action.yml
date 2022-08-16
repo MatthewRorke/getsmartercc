@@ -5,5 +5,4 @@ runs:
   using: "docker"
   image: "docker://codeclimate/codeclimate"
   args:
-    - analyze
-    - ${{ github.workspace }}
+    - analyze ${{ github.workspace }}
