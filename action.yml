@@ -4,7 +4,6 @@ description: "Runs Code Climate Checker without reports"
 runs:
   using: "docker"
   image: "docker://codeclimate/codeclimate"
-  volumes:
   args:
     - analyze
     - ${{ github.workspace }}
