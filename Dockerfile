@@ -1,4 +1,7 @@
-FROM codeclimate/codeclimate
+FROM ubuntu:14.04
+
+RUN apt install docker
+RUN docker pull codeclimate/codeclimate
 
 RUN mkdir -p /test
 ADD . /test/

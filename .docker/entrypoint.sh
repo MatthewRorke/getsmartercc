@@ -1,4 +1,8 @@
 #!/bin/sh -l
-cd $GITHUB_WORKSPACE
-ls -la
-/usr/src/app/bin/codeclimate analyze
+docker run \
+  --interactive --tty --rm \
+  --env CODECLIMATE_CODE="$GITHUB_WORKSPACE" \
+  --volume "$GITHUB_WORKSPACE":/code \
+  --volume /var/run/docker.sock:/var/run/docker.sock \
+  --volume /tmp/cc:/tmp/cc \
+  codeclimate/codeclimate help
