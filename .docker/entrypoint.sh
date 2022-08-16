@@ -1,2 +1,3 @@
 #!/bin/sh -l
-codeclimate analyse
+codeclimate/codeclimate analyse
+/codeclimate/codeclimate analyse
