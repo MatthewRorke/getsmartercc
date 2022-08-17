@@ -1,4 +1,7 @@
 #!/bin/sh -l
-# ln -s $GITHUB_WORKSPACE /code #make symlink if needed
 echo $GITHUB_WORKSPACE
-/usr/src/app/bin/codeclimate analyze $GITHUB_WORKSPACE
+ln -s $GITHUB_WORKSPACE /code
+cd /code
+ls -la
+/usr/src/app/bin/codeclimate engines:install
+/usr/src/app/bin/codeclimate analyze
