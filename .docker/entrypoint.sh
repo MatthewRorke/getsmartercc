@@ -1,5 +1,7 @@
 #!/bin/sh -l
 echo $GITHUB_WORKSPACE
+cd $GITHUB_WORKSPACE
+ls -la
 # ln -s $GITHUB_WORKSPACE /code
 # cd /code
 # ls -la
