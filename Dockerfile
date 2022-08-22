@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
 RUN mkdir -p /test
 ADD . /test/
