@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add --update docker openrc curl
+RUN apk add --update docker openrc curl make
 
 RUN mkdir -p /test
 ADD . /test/
