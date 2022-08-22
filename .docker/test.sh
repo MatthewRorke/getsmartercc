@@ -4,7 +4,7 @@ echo "PREPARING"
 docker pull codeclimate/codeclimate
 
 docker run \
-  --interactive --tty --rm \
+  --rm \
   --env CODECLIMATE_CODE="$GITHUB_WORKSPACE" \
   --volume "$GITHUB_WORKSPACE":/code \
   --volume /var/run/docker.sock:/var/run/docker.sock \
