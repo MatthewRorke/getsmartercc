@@ -3,4 +3,4 @@ name: "CodeClimate Checker"
 description: "Runs Code Climate Checker without reports"
 runs:
   using: "docker"
-  image: "Dockerfile"
+  image: "Dockerfile" 
