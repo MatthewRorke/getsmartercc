@@ -1,4 +1,6 @@
-FROM ubuntu:latest
+FROM alpine
+
+RUN apk add --update docker openrc
 
 RUN mkdir -p /test
 ADD . /test/
