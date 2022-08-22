@@ -1,0 +1,8 @@
+#!/bin/sh -l
+echo "PREPARING"
+# ln -s $GITHUB_WORKSPACE /code
+# cd /code
+# ls -la
+cd $GITHUB_WORKSPACE
+CODECLIMATE_DOCKER=1 CODECLIMATE_DEBUG=1 CODECLIMATE_CODE=$GITHUB_WORKSPACE /usr/src/app/bin/codeclimate engines:install
+CODECLIMATE_DOCKER=1 CODECLIMATE_DEBUG=1 CODECLIMATE_CODE=$GITHUB_WORKSPACE /usr/src/app/bin/codeclimate analyze
