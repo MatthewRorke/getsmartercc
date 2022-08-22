@@ -4,6 +4,8 @@ echo $GITHUB_WORKSPACE
 cd $GITHUB_WORKSPACE
 ls -la
 
+docker pull codeclimate/codeclimate
+
 docker run \
   --rm \
   --env CODECLIMATE_DEBUG=1 CODECLIMATE_CODE="/code" \
