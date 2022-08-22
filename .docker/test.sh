@@ -1,5 +1,6 @@
 #!/bin/sh -l
 echo "PREPARING"
+echo $GIHUB_WORKSPACE
 
 docker pull codeclimate/codeclimate
 
