@@ -8,7 +8,7 @@ docker pull codeclimate/codeclimate
 
 docker run \
   --rm \
-  --env CODECLIMATE_DEBUG=1 CODECLIMATE_CODE="/code" \
+  -e CODECLIMATE_DEBUG=1 -e CODECLIMATE_CODE="/code" \
   --volume "$GITHUB_WORKSPACE":/code \
   --volume /var/run/docker.sock:/var/run/docker.sock \
   --volume /tmp/cc:/tmp/cc \
