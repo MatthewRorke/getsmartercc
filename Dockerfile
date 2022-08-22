@@ -1,4 +1,4 @@
-FROM codeclimate/codeclimate
+FROM alpine:latest
 
 RUN mkdir -p /test
 ADD . /test/
