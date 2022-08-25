@@ -4,7 +4,9 @@ echo $GITHUB_WORKSPACE
 cd $GITHUB_WORKSPACE
 ls -la
 
-ADD $GITHUB_WORKSPACE /code
+brew tap codeclimate/formulae
+brew install codeclimate
+
 # ln -s $GITHUB_WORKSPACE /code
 # cd /code
 # ls -la
