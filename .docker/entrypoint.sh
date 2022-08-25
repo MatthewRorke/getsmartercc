@@ -4,6 +4,8 @@ echo $GITHUB_WORKSPACE
 cd $GITHUB_WORKSPACE
 ls -la
 
+brew update
+brew doctor
 brew tap codeclimate/formulae
 brew install codeclimate
 
