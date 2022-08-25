@@ -8,6 +8,9 @@ ls -la
 
 #ln -s $GITHUB_WORKSPACE /code
 
+curl -L https://github.com/codeclimate/codeclimate/archive/master.tar.gz | tar xvz
+cd codeclimate-* && sudo make install
+
 codeclimate
 
 # docker run \
