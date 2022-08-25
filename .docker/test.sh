@@ -1,5 +1,6 @@
 #!/bin/sh -l
 #GITHUB_WORKSPACE="/Users/mrorke/Projects/online-campus/blocks/student_appeals/"
+chmod -R 777 $GITHUB_WORKSPACE
 echo "PREPARING"
 echo $GITHUB_WORKSPACE
 #cd $GITHUB_WORKSPACE
