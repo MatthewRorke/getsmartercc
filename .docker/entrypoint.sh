@@ -3,8 +3,8 @@ echo "PREPARING"
 echo $GITHUB_WORKSPACE
 cd $GITHUB_WORKSPACE
 ls -la
-docker pull codeclimate/codeclimate
 
+ADD $GITHUB_WORKSPACE /code
 # ln -s $GITHUB_WORKSPACE /code
 # cd /code
 # ls -la

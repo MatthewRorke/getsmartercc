@@ -1,6 +1,7 @@
-FROM alpine
+FROM homebrew/brew
 
-RUN apk add --update docker openrc
+RUN brew tap codeclimate/formulae
+RUN brew install codeclimate
 RUN mkdir -p /test
 ADD . /test/
 RUN chmod +x /test/.docker/entrypoint.sh 
