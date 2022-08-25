@@ -4,10 +4,8 @@ echo $GITHUB_WORKSPACE
 cd $GITHUB_WORKSPACE
 ls -la
 
-brew update
-brew doctor
-brew tap codeclimate/formulae
-brew install codeclimate
+curl -L https://github.com/codeclimate/codeclimate/archive/master.tar.gz | tar xvz
+cd codeclimate-* && sudo make install
 
 # ln -s $GITHUB_WORKSPACE /code
 # cd /code
